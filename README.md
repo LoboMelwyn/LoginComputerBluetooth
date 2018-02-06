@@ -6,8 +6,9 @@ This is a small code for logging in linux system wityh just turning your bluetoo
 # Installing Instruction (Ubuntu)
 1. sudo apt-get install libpam-python bluetooth libbluetooth-dev gobject
 1. sudo pip install pybluez
-1. Edit /etc/pam.d/common-auth and enter following line in the top of the file
-  auth  sufficient  pam_python.so /path/to/pam.py
+1. Edit **/etc/pam.d/common-auth** and enter following line in the top of the file
+  
+  **auth  sufficient  pam_python.so /path/to/pam.py**
 
 Now turn on bluetooth on your device and test it by opening a terminal and typing **sudo -i**
 
