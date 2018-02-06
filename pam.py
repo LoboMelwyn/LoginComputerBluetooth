@@ -13,7 +13,7 @@ def doAuth(pamh):
 	"""Do Authentication here"""
 	search_time = 10
 	# Hardcoded the data for now
-	addr = "18:F0:E4:CB:64:8E"
+	addr = "Bluetooth_Device_ID_Here"
 	state = bluetooth.lookup_name(addr, timeout=20)
 	services = bluetooth.find_service(address=addr)
 	if state == None and services == []:
